@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="validation of car search page" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-01-06T11:33:11" hostname="malolat" time="14.707">
+  <properties/>
+  <testcase name="Searching for a new car" classname="validation of car search page" time="14.707">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;u_H&quot;]/div/div[1]/ul/li[1]/div/div/div[1]/ul/li[1]/b&quot;}&#10;  (Session info: chrome=78.0.3904.108)&#10;  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 84 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.41.0', revision: '3192d8a6c4449dc285928ba024779344f5423c58', time: '2014-03-27 11:29:39'&#10;System info: host: 'malolat', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61094}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\MICHA~1\AppData\Local\Temp\scoped_dir6356_627296679}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 25b116aacec1016a53930557eb288faa" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;u_H&quot;]/div/div[1]/ul/li[1]/div/div/div[1]/ul/li[1]/b&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 84 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a6c4449dc285928ba024779344f5423c58', time: '2014-03-27 11:29:39'
+System info: host: 'malolat', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61094}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\MICHA~1\AppData\Local\Temp\scoped_dir6356_627296679}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 25b116aacec1016a53930557eb288faa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at steps.CarSearch.i_click_on_Search_Cars(CarSearch.java:54)
+	at ✽.I click on Search Cars(file:src/test/java/features/carSearch.feature:10)
+</failure>
+  </testcase>
+  <system-out><![CDATA[@car
+Feature: validation of car search page
+  In order to validate car search
+  as a buyer
+  I navigate http://www.carsguide.com.au
+
+  @car
+  Scenario: Searching for a new car                                                  ?[90m# src/test/java/features/carSearch.feature:7?[0m
+Launch the browser
+    ?[32mGiven ?[0m?[32mI am on the home page http://www.carsguide.com.au of carsguide website?[0m     ?[90m# CarSearch.i_am_on_the_home_page_http_www_carsguide_com_au_of_carsguide_website()?[0m
+    ?[32mWhen ?[0m?[32mI move to Car for Sale Menu?[0m                                                 ?[90m# CarSearch.i_move_to_Car_for_Sale_Menu()?[0m
+    ?[31mThen ?[0m?[31mI click on Search Cars?[0m                                                      ?[90m# CarSearch.i_click_on_Search_Cars()?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="u_H"]/div/div[1]/ul/li[1]/div/div/div[1]/ul/li[1]/b"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 84 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.41.0', revision: '3192d8a6c4449dc285928ba024779344f5423c58', time: '2014-03-27 11:29:39'
+System info: host: 'malolat', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61094}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\MICHA~1\AppData\Local\Temp\scoped_dir6356_627296679}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 25b116aacec1016a53930557eb288faa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at steps.CarSearch.i_click_on_Search_Cars(CarSearch.java:54)
+	at ?.I click on Search Cars(file:src/test/java/features/carSearch.feature:10)
+?[0m
+    ?[36mAnd ?[0m?[36mI select Make as "?[0m?[36m?[1mBMW?[0m?[36m"?[0m                                                       ?[90m# CarSearch.i_select_Make_as(String)?[0m
+    ?[36mAnd ?[0m?[36mI select Model as "?[0m?[36m?[1m1 Series?[0m?[36m"?[0m                                                 ?[90m# CarSearch.i_select_Model_as(String)?[0m
+    ?[36mAnd ?[0m?[36mI select location as "?[0m?[36m?[1mACT - All?[0m?[36m"?[0m                                             ?[90m# CarSearch.i_select_location_as(String)?[0m
+    ?[36mAnd ?[0m?[36mI select price as "?[0m?[36m?[1m$10,000?[0m?[36m"?[0m                                                  ?[90m# CarSearch.i_select_price_as(String)?[0m
+    ?[36mAnd ?[0m?[36mI click on Find My Next Car button?[0m                                           ?[90m# CarSearch.i_click_on_Find_My_Next_Car_button()?[0m
+    ?[36mThen ?[0m?[36mI should see list of searched cars from "?[0m?[36m?[1mBMW?[0m?[36m"?[0m                               ?[90m# CarSearch.i_should_see_list_of_searched_cars(String)?[0m
+    ?[36mAnd ?[0m?[36mthe page title should be "?[0m?[36m?[1mBmw 1 Series Under 10000 for Sale ACT | carsguide?[0m?[36m"?[0m ?[90m# CarSearch.the_page_title_should_be(String)?[0m
+driver.quit
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 12288
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1578310394.222][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
+[1578310396.284][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+</testsuite>
